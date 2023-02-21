@@ -24,7 +24,6 @@ describe('generatePrimes', () => {
    test('can generate one million primes', () => {
        const primes = generatePrimes(1_000_000);
 
-       console.log(primes[999_999]);
        expect(primes).toHaveLength(1_000_000);
        expect(primes).toContain(PRIME_ONE_MILLION);
    })

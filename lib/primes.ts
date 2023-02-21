@@ -11,9 +11,8 @@
 export function sieveOfEratosthenes(n: number, previousSieve?: Uint8Array): SieveResult {
     const isPrime = (new Uint8Array(n)).fill(1);
     if (previousSieve) {
-        previousSieve.forEach((v, i) => {
-            isPrime[i] = v;
-        });
+        const end = Math.min(previousSieve.length, n);
+        isPrime.set(previousSieve.subarray(0, end))
     }
     const sqrtN = Math.sqrt(n);
 
