@@ -1,6 +1,13 @@
 
-// Produce primes < n
-function sieveOfEratosthenes(n) {
+/**
+ * Produce primes < n using the Sieve of Eratosthenes
+ *
+ * Wiki: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+ *
+ * @param n Upper bound for prime value
+ * @returns {*[]}
+ */
+export function sieveOfEratosthenes(n: number): number[] {
     const isPrime = (new Uint8Array(n)).fill(1);
     const sqrtN = Math.sqrt(n);
 
@@ -20,9 +27,5 @@ function sieveOfEratosthenes(n) {
         }
 
         return primes;
-    }, []);
+    }, [] as number[]);
 }
-
-console.log("hello");
-
-console.log(sieveOfEratosthenes(10));

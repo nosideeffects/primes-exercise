@@ -1,6 +1,17 @@
 {
   "name": "primes-exercise",
   "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3"
+  },
   "dependencies": {
+    "typescript": "^4.9.5"
   }
 }
