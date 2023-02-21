@@ -2,7 +2,9 @@
   "name": "primes-exercise",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "test": "jest",
+    "primes": "node main.js"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
